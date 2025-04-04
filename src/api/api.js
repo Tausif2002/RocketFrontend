@@ -32,7 +32,7 @@ const api = {
     },
     login(Uid, fcm) {
         var myHeaders = new Headers();
-        myHeaders.append(access_key_param, access_key);
+        myHeaders.append( access_key);
         var formdata = new FormData();
         formdata.append("auth_uid", Uid);
         formdata.append("fcm_token", fcm);

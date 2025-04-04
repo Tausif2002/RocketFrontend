@@ -12,7 +12,7 @@ const api = {
     },
     register(Uid, name, email, mobile, type, fcm, country_code) {
         let myHeaders = new Headers();
-        myHeaders.append(access_key_param, access_key);
+        // myHeaders.append(access_key_param, access_key);
         let formdata = new FormData();
         formdata.append("auth_uid", Uid);
         formdata.append("name", name);
@@ -48,7 +48,7 @@ const api = {
     },
     logout(token) {
         var myHeaders = new Headers();
-        myHeaders.append(access_key_param, access_key);
+        // myHeaders.append(access_key_param, access_key);
         myHeaders.append("Authorization", token_prefix + token);
 
         var formdata = new FormData();
@@ -64,7 +64,7 @@ const api = {
     },
     deleteAccount(token, uid) {
         var myHeaders = new Headers();
-        myHeaders.append(access_key_param, access_key);
+        // myHeaders.append(access_key_param, access_key);
         myHeaders.append("Authorization", token_prefix + token);
 
         var formdata = new FormData();
@@ -103,7 +103,7 @@ const api = {
     },
     getCity(latitude, longitude) {
         var myHeaders = new Headers();
-        myHeaders.append(access_key_param, access_key);
+        // myHeaders.append(access_key_param, access_key);
 
         var requestOptions = {
             method: 'GET',
@@ -126,7 +126,7 @@ const api = {
     getShop(latitiude, longitude, token = "") {
 
         var myHeaders = new Headers();
-        myHeaders.append(access_key_param, access_key);
+        // myHeaders.append(access_key_param, access_key);
         myHeaders.append("Authorization", token_prefix + token);
 
         var requestOptions = {
@@ -143,7 +143,7 @@ const api = {
     },
     getBrands(limit, offset) {
         var myHeaders = new Headers();
-        myHeaders.append(access_key_param, access_key);
+        // myHeaders.append(access_key_param, access_key);
 
         // var formdata = new FormData();
         let params = {
@@ -165,7 +165,7 @@ const api = {
     },
     // getCategory(id = 0) {
     //     var myHeaders = new Headers();
-    //     myHeaders.append(access_key_param, access_key);
+        // myHeaders.append(access_key_param, access_key);
 
     //     var formdata = new FormData();
     //     formdata.append('category_id', id);
@@ -190,7 +190,7 @@ const api = {
         slug = ""
     }) {
         var myHeaders = new Headers();
-        myHeaders.append(access_key_param, access_key);
+        // myHeaders.append(access_key_param, access_key);
 
         var formdata = new FormData();
         formdata.append('category_id', id);
@@ -216,7 +216,7 @@ const api = {
     },
     getSlider() {
         var myHeaders = new Headers();
-        myHeaders.append(access_key_param, access_key);
+        // myHeaders.append(access_key_param, access_key);
 
         //var formdata = new FormData();
 
@@ -231,7 +231,7 @@ const api = {
     },
     getOffer() {
         var myHeaders = new Headers();
-        myHeaders.append(access_key_param, access_key);
+        // myHeaders.append(access_key_param, access_key);
 
         var requestOptions = {
             method: 'GET',
@@ -243,7 +243,7 @@ const api = {
     },
     getSection(city_id, latitiude, longitude) {
         var myHeaders = new Headers();
-        myHeaders.append(access_key_param, access_key);
+        // myHeaders.append(access_key_param, access_key);
 
         var requestOptions = {
             method: 'GET',
@@ -261,7 +261,7 @@ const api = {
     },
     getUser(token) {
         var myHeaders = new Headers();
-        myHeaders.append(access_key_param, access_key);
+        // myHeaders.append(access_key_param, access_key);
         myHeaders.append("Authorization", token_prefix + token);
 
         //var formdata = new FormData();
@@ -277,7 +277,7 @@ const api = {
     },
     edit_profile(uname, email, phonenumber, selectedFile = "", token) {
         var myHeaders = new Headers();
-        myHeaders.append(access_key_param, access_key);
+        // myHeaders.append(access_key_param, access_key);
         myHeaders.append("Authorization", token_prefix + token);
         var formdata = new FormData();
 
@@ -306,7 +306,7 @@ const api = {
     getProductbyFilter(latitude, longitude, filters, token, tag_names, slug) {
         var myHeaders = new Headers();
         //console.log("getProductbyFilter API ->", filters);
-        myHeaders.append(access_key_param, access_key);
+        // myHeaders.append(access_key_param, access_key);
         token && myHeaders.append("Authorization", token_prefix + token);
         var formdata = new FormData();
         // formdata.append("city_id", city_id);
@@ -340,7 +340,7 @@ const api = {
     },
     getProductbyId(latitude, longitude, id, token, slug) {
         var myHeaders = new Headers();
-        myHeaders.append(access_key_param, access_key);
+        // myHeaders.append(access_key_param, access_key);
         myHeaders.append("Authorization", token_prefix + token);
 
         let formdata = new FormData();
@@ -362,7 +362,7 @@ const api = {
     },
     getCart(token, latitude, longitude, checkout = 0) {
         var myHeaders = new Headers();
-        myHeaders.append(access_key_param, access_key);
+        // myHeaders.append(access_key_param, access_key);
         myHeaders.append("Authorization", token_prefix + token);
 
         var requestOptions = {
@@ -381,7 +381,7 @@ const api = {
     },
     getCartSeller(token, latitude, longitude, checkout = 1) {
         var myHeaders = new Headers();
-        myHeaders.append(access_key_param, access_key);
+        // myHeaders.append(access_key_param, access_key);
         myHeaders.append("Authorization", token_prefix + token);
 
         var requestOptions = {
@@ -400,7 +400,7 @@ const api = {
     },
     removeCart(token) {
         var myHeaders = new Headers();
-        myHeaders.append(access_key_param, access_key);
+        // myHeaders.append(access_key_param, access_key);
         myHeaders.append("Authorization", token_prefix + token);
 
         var formdata = new FormData();
@@ -418,7 +418,7 @@ const api = {
     },
     addToCart(token, product_id, product_variant_id, qty) {
         var myHeaders = new Headers();
-        myHeaders.append(access_key_param, access_key);
+        // myHeaders.append(access_key_param, access_key);
         myHeaders.append("Authorization", token_prefix + token);
 
         var formdata = new FormData();
@@ -437,7 +437,7 @@ const api = {
     },
     removeFromCart(token, product_id, product_variant_id) {
         var myHeaders = new Headers();
-        myHeaders.append(access_key_param, access_key);
+        // myHeaders.append(access_key_param, access_key);
         myHeaders.append("Authorization", token_prefix + token);
 
         var formdata = new FormData();
@@ -456,7 +456,7 @@ const api = {
     },
     getFavorite(token, latitude, longitude) {
         var myHeaders = new Headers();
-        myHeaders.append(access_key_param, access_key);
+        // myHeaders.append(access_key_param, access_key);
         myHeaders.append("Authorization", token_prefix + token);
 
         var requestOptions = {
@@ -475,7 +475,7 @@ const api = {
     },
     addToFavotite(token, product_id) {
         var myHeaders = new Headers();
-        myHeaders.append(access_key_param, access_key);
+        // myHeaders.append(access_key_param, access_key);
         myHeaders.append("Authorization", token_prefix + token);
 
         var formdata = new FormData();
@@ -492,7 +492,7 @@ const api = {
     },
     removeFromFavorite(token, product_id) {
         var myHeaders = new Headers();
-        myHeaders.append(access_key_param, access_key);
+        // myHeaders.append(access_key_param, access_key);
         myHeaders.append("Authorization", token_prefix + token);
 
         var formdata = new FormData();
@@ -509,7 +509,7 @@ const api = {
     },
     getAddress(token) {
         var myHeaders = new Headers();
-        myHeaders.append(access_key_param, access_key);
+        // myHeaders.append(access_key_param, access_key);
         myHeaders.append("Authorization", token_prefix + token);
         var requestOptions = {
             method: 'GET',
@@ -520,7 +520,7 @@ const api = {
     },
     addAddress(token, name, mobile, type, address, landmark, area, pincode, city, state, country, alternate_mobile, latitiude, longitude, is_default) {
         var myHeaders = new Headers();
-        myHeaders.append(access_key_param, access_key);
+        // myHeaders.append(access_key_param, access_key);
         myHeaders.append("Authorization", token_prefix + token);
 
         var formdata = new FormData();
@@ -550,7 +550,7 @@ const api = {
     },
     deleteAddress(token, address_id) {
         var myHeaders = new Headers();
-        myHeaders.append(access_key_param, access_key);
+        // myHeaders.append(access_key_param, access_key);
         myHeaders.append("Authorization", token_prefix + token);
 
         var formdata = new FormData();
@@ -568,7 +568,7 @@ const api = {
     },
     updateAddress(token, address_id, name, mobile, type, address, landmark, area, pincode, city, state, country, alternate_mobile, latitiude, longitude, is_default) {
         var myHeaders = new Headers();
-        myHeaders.append(access_key_param, access_key);
+        // myHeaders.append(access_key_param, access_key);
         myHeaders.append("Authorization", token_prefix + token);
 
         var formdata = new FormData();
@@ -599,7 +599,7 @@ const api = {
     },
     fetchTimeSlot() {
         var myHeaders = new Headers();
-        myHeaders.append(access_key_param, access_key);
+        // myHeaders.append(access_key_param, access_key);
 
         var requestOptions = {
             method: 'GET',
@@ -612,7 +612,7 @@ const api = {
     placeOrder(token, product_variant_id, quantity, total, delivery_charge, final_total, payment_method, address_id, deliveryTime, promocode_id = 0, wallet_balance, wallet_used, order_note) {
         // console.log(token, product_variant_id, quantity, total, delivery_charge, final_total, payment_method, address_id, deliveryTime, promocode_id, wallet_balance, wallet_used);
         var myHeaders = new Headers();
-        myHeaders.append(access_key_param, access_key);
+        // myHeaders.append(access_key_param, access_key);
         myHeaders.append("Authorization", token_prefix + token);
         var formdata = new FormData();
         formdata.append("product_variant_id", product_variant_id);
@@ -651,7 +651,7 @@ const api = {
     },
     deleteOrder(token, order_id) {
         var myHeaders = new Headers();
-        myHeaders.append(access_key_param, access_key);
+        // myHeaders.append(access_key_param, access_key);
         myHeaders.append("Authorization", token_prefix + token);
         var formdata = new FormData();
         formdata.append("order_id", order_id);
@@ -665,7 +665,7 @@ const api = {
     },
     getOrders(token, limit = 10, offset = 0, type = 1, order_id) {
         var myHeaders = new Headers();
-        myHeaders.append(access_key_param, access_key);
+        // myHeaders.append(access_key_param, access_key);
         myHeaders.append("Authorization", token_prefix + token);
         var requestOptions = {
             method: 'GET',
@@ -682,7 +682,7 @@ const api = {
     },
     getPaymentSettings(token) {
         var myHeaders = new Headers();
-        myHeaders.append(access_key_param, access_key);
+        // myHeaders.append(access_key_param, access_key);
         myHeaders.append("Authorization", token_prefix + token);
         var requestOptions = {
             method: 'GET',
@@ -693,7 +693,7 @@ const api = {
     },
     getTransactions(token, limit = 10, offset = 0, type = 'transactions') {
         var myHeaders = new Headers();
-        myHeaders.append(access_key_param, access_key);
+        // myHeaders.append(access_key_param, access_key);
         myHeaders.append("Authorization", token_prefix + token);
 
         var requestOptions = {
@@ -713,7 +713,7 @@ const api = {
     },
     getInvoices(token, order_id) {
         var myHeaders = new Headers();
-        myHeaders.append(access_key_param, access_key);
+        // myHeaders.append(access_key_param, access_key);
         myHeaders.append("Authorization", token_prefix + token);
         var formData = new FormData();
         formData.append('order_id', order_id);
@@ -730,7 +730,7 @@ const api = {
     },
     addTransaction(token, order_id, transaction_id, transaction_method, type, wallet_amount) {
         var myHeaders = new Headers();
-        myHeaders.append(access_key_param, access_key);
+        // myHeaders.append(access_key_param, access_key);
         myHeaders.append('Authorization', token_prefix + token);
         var formData = new FormData();
         if (order_id) {
@@ -759,7 +759,7 @@ const api = {
     initiate_transaction(token, order_id, payment_method, type, wallet_amount) {
 
         var myHeaders = new Headers();
-        myHeaders.append(access_key_param, access_key);
+        // myHeaders.append(access_key_param, access_key);
         myHeaders.append('Authorization', token_prefix + token);
         var formData = new FormData();
         if (order_id) {
@@ -806,7 +806,7 @@ const api = {
     },
     addRazorpayTransaction(token, order_id, transaction_id, razorpay_order_id, razorpay_payment_id, razorpay_signature) {
         var myHeaders = new Headers();
-        myHeaders.append(access_key_param, access_key);
+        // myHeaders.append(access_key_param, access_key);
         myHeaders.append('Authorization', token_prefix + token);
         var formData = new FormData();
         formData.append('order_id', order_id);
@@ -829,7 +829,7 @@ const api = {
     },
     getNotification(token, limit = 5, offset = (1 * 5 - 5)) {
         var myHeaders = new Headers();
-        myHeaders.append(access_key_param, access_key);
+        // myHeaders.append(access_key_param, access_key);
         myHeaders.append("Authorization", token_prefix + token);
 
         var requestOptions = {
@@ -848,7 +848,7 @@ const api = {
     },
     getFaq(limit, offset) {
         var myHeaders = new Headers();
-        myHeaders.append(access_key_param, access_key);
+        // myHeaders.append(access_key_param, access_key);
         var requestOptions = {
             method: 'GET',
             headers: myHeaders,
@@ -865,7 +865,7 @@ const api = {
     },
     getPromo(token, amount = 0) {
         var myHeaders = new Headers();
-        myHeaders.append(access_key_param, access_key);
+        // myHeaders.append(access_key_param, access_key);
         myHeaders.append("Authorization", token_prefix + token);
 
         var requestOptions = {
@@ -884,7 +884,7 @@ const api = {
     },
     setPromo(token, promo_code, amount = 0) {
         var myHeaders = new Headers();
-        myHeaders.append(access_key_param, access_key);
+        // myHeaders.append(access_key_param, access_key);
         myHeaders.append("Authorization", token_prefix + token);
 
         var requestOptions = {
@@ -903,7 +903,7 @@ const api = {
     },
     getSystemLanguage(id, is_default) {
         var myHeaders = new Headers();
-        myHeaders.append(access_key_param, access_key);
+        // myHeaders.append(access_key_param, access_key);
 
         var requestOptions = {
             method: 'GET',
@@ -932,7 +932,7 @@ const api = {
         // 7:Cancelled
         // 8:Returned
         var myHeaders = new Headers();
-        myHeaders.append(access_key_param, access_key);
+        // myHeaders.append(access_key_param, access_key);
         myHeaders.append("Authorization", token_prefix + token);
 
         var data = new FormData();
@@ -956,7 +956,7 @@ const api = {
     },
     getProductRatings(token, product_id, limit, offset) {
         var myHeaders = new Headers();
-        myHeaders.append(access_key_param, access_key);
+        // myHeaders.append(access_key_param, access_key);
         myHeaders.append("Authorization", token_prefix + token);
 
         var requestOptions = {
@@ -979,7 +979,7 @@ const api = {
     addProductRating(token, product_id, rate, review, images) {
         // console.log(product_id, rate, review, images);
         var myHeaders = new Headers();
-        myHeaders.append(access_key_param, access_key);
+        // myHeaders.append(access_key_param, access_key);
         myHeaders.append("Authorization", token_prefix + token);
 
         var data = new FormData();
@@ -1000,7 +1000,7 @@ const api = {
         return fetch(appUrl + appSubUrl + "/products/rating/add", requestOptions);
     }, getProductRatingById(token, ratingId) {
         var myHeaders = new Headers();
-        myHeaders.append(access_key_param, access_key);
+        // myHeaders.append(access_key_param, access_key);
         myHeaders.append("Authorization", token_prefix + token);
         var data = new FormData();
         data.append("id", ratingId);
@@ -1016,7 +1016,7 @@ const api = {
     },
     updateProductRating(token, ratingId, rate, review, images, deleteImageIds) {
         var myHeaders = new Headers();
-        myHeaders.append(access_key_param, access_key);
+        // myHeaders.append(access_key_param, access_key);
         myHeaders.append("Authorization", token_prefix + token);
         var data = new FormData();
         data.append("id", ratingId);
@@ -1037,7 +1037,7 @@ const api = {
     },
     getShopBySellers(token, latitude, longitude, limit, offset) {
         var myHeaders = new Headers();
-        myHeaders.append(access_key_param, access_key);
+        // myHeaders.append(access_key_param, access_key);
         myHeaders.append("Authorization", token_prefix + token);
         var requestOptions = {
             method: 'GET',
@@ -1058,7 +1058,7 @@ const api = {
     },
     getShopByCountries(token, limit, offset) {
         var myHeaders = new Headers();
-        myHeaders.append(access_key_param, access_key);
+        // myHeaders.append(access_key_param, access_key);
         myHeaders.append("Authorization", token_prefix + token);
         var requestOptions = {
             method: 'GET',
@@ -1077,7 +1077,7 @@ const api = {
     },
     getShopByBrands(token, limit, offset) {
         var myHeaders = new Headers();
-        myHeaders.append(access_key_param, access_key);
+        // myHeaders.append(access_key_param, access_key);
         myHeaders.append("Authorization", token_prefix + token);
         var requestOptions = {
             method: 'GET',
@@ -1096,7 +1096,7 @@ const api = {
     },
     getProductRatingImages(token, product_id, limit, offset) {
         var myHeaders = new Headers();
-        myHeaders.append(access_key_param, access_key);
+        // myHeaders.append(access_key_param, access_key);
         myHeaders.append("Authorization", token_prefix + token);
 
         var data = new FormData();
@@ -1115,7 +1115,7 @@ const api = {
     },
     getGuestCart(latitude, longitude, variantIds, quantities) {
         var myHeaders = new Headers();
-        myHeaders.append(access_key_param, access_key);
+        // myHeaders.append(access_key_param, access_key);
 
         let params = {
             latitude,
@@ -1140,7 +1140,7 @@ const api = {
     },
     bulkAddToCart(token, variantIds, quantities) {
         var myHeaders = new Headers();
-        myHeaders.append(access_key_param, access_key);
+        // myHeaders.append(access_key_param, access_key);
         myHeaders.append("Authorization", token_prefix + token);
 
         let params = {
@@ -1163,7 +1163,7 @@ const api = {
     },
     checkUserExists(number) {
         let myHeaders = new Headers();
-        myHeaders.append(access_key_param, access_key);
+        // myHeaders.append(access_key_param, access_key);
 
         let formData = new FormData();
         formData.append("mobile", number);

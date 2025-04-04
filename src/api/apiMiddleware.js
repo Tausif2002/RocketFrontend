@@ -23,7 +23,7 @@ api.interceptors.request.use(
                 config.headers.Authorization = `Bearer ${authToken}`
             }
             config.headers["Content-Type"] = "multipart/form-data"
-            config.headers["x-access-key"] = access_key
+            // config.headers["x-access-key"] = access_key
             return config
         } catch (error) {
             console.error("Error in token retrival", error)

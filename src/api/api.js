@@ -81,7 +81,7 @@ const api = {
     },
     getSettings(isToken = 0, token) {
         var myHeaders = new Headers();
-        myHeaders.append( access_key);
+        
         if (isToken === 1) {
             myHeaders.append("Authorization", token_prefix + token);
         }

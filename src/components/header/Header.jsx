@@ -719,7 +719,7 @@ const Header = () => {
                                     <IoLocationOutline size={24} />
                                 </span>
                                 <span className='location-value'>
-                                    <span>{t("deliver_to")}</span>
+                                    <span>Deliver in 10 Minutes to</span>
                                     <h4>{city.status === 'fulfill'
                                         ? city.city.formatted_address
                                         : (

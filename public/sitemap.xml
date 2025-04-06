@@ -1,101 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Homepage -->
+  <url>
+    <loc>https://buskit.in/</loc>
+    <lastmod>2025-04-03T15:47:59+00:00</lastmod>
+    <priority>1.00</priority>
+  </url>
 
+  <!-- Static Pages -->
+  <url>
+    <loc>https://buskit.in/about</loc>
+    <lastmod>2025-04-03T15:47:59+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://buskit.in/contact</loc>
+    <lastmod>2025-04-03T15:47:59+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://buskit.in/faqs</loc>
+    <lastmod>2025-04-03T15:47:59+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://buskit.in/notification</loc>
+    <lastmod>2025-04-03T15:47:59+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://buskit.in/wishlist</loc>
+    <lastmod>2025-04-03T15:47:59+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://buskit.in/cart</loc>
+    <lastmod>2025-04-03T15:47:59+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://buskit.in/profile</loc>
+    <lastmod>2025-04-03T15:47:59+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
 
-<url>
-  <loc>https://egrocerweb.wrteam.me/</loc>
-  <lastmod>2025-04-03T15:47:59+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
+  <!-- Categories & Products -->
+  <url>
+    <loc>https://buskit.in/categories</loc>
+    <lastmod>2025-04-03T15:47:59+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://buskit.in/products</loc>
+    <lastmod>2025-04-03T15:47:59+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://buskit.in/product</loc>
+    <lastmod>2025-04-03T15:47:59+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
 
-<url>
-  <loc>https://egrocerweb.wrteam.me/about</loc>
-  <lastmod>2025-04-03T15:47:59+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://egrocerweb.wrteam.me/contact</loc>
-  <lastmod>2025-04-03T15:47:59+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://egrocerweb.wrteam.me/faqs</loc>
-  <lastmod>2025-04-03T15:47:59+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://egrocerweb.wrteam.me/notification</loc>
-  <lastmod>2025-04-03T15:47:59+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://egrocerweb.wrteam.me/wishlist</loc>
-  <lastmod>2025-04-03T15:47:59+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://egrocerweb.wrteam.me/cart</loc>
-  <lastmod>2025-04-03T15:47:59+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://egrocerweb.wrteam.me/profile</loc>
-  <lastmod>2025-04-03T15:47:59+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://egrocerweb.wrteam.me/categories</loc>
-  <lastmod>2025-04-03T15:47:59+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://egrocerweb.wrteam.me/products</loc>
-  <lastmod>2025-04-03T15:47:59+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://egrocerweb.wrteam.me/product</loc>
-  <lastmod>2025-04-03T15:47:59+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://egrocerweb.wrteam.me/product/:slug</loc>
-  <lastmod>2025-04-03T15:47:59+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://egrocerweb.wrteam.me/terms</loc>
-  <lastmod>2025-04-03T15:47:59+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://egrocerweb.wrteam.me/checkout</loc>
-  <lastmod>2025-04-03T15:47:59+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://egrocerweb.wrteam.me/policy/Privacy_Policy</loc>
-  <lastmod>2025-04-03T15:47:59+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://egrocerweb.wrteam.me/policy/ReturnsAndExchangesPolicy</loc>
-  <lastmod>2025-04-03T15:47:59+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://egrocerweb.wrteam.me/policy/ReturnsAndExchangesPolicy</loc>
-  <lastmod>2025-04-03T15:47:59+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://egrocerweb.wrteam.me/policy/Cancellation_Policy</loc>
-  <lastmod>2025-04-03T15:47:59+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
+  <!-- Remove :slug routes -->
+
+  <!-- Policies & Legal -->
+  <url>
+    <loc>https://buskit.in/terms</loc>
+    <lastmod>2025-04-03T15:47:59+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://buskit.in/checkout</loc>
+    <lastmod>2025-04-03T15:47:59+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://buskit.in/policy/Privacy_Policy</loc>
+    <lastmod>2025-04-03T15:47:59+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://buskit.in/policy/ReturnsAndExchangesPolicy</loc>
+    <lastmod>2025-04-03T15:47:59+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://buskit.in/policy/Cancellation_Policy</loc>
+    <lastmod>2025-04-03T15:47:59+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
 </urlset>
